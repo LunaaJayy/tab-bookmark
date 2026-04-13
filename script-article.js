@@ -38,7 +38,7 @@ window.addEventListener("load", () => {
 	if (jumpToggle.checked && saved) {
 		const el = document.querySelector(saved);
 		if (el) {
-			el.focus();
+			// el.focus();
 			announce("Bookmark geladen, verder lezen vanaf hier");
 		}
 	}
