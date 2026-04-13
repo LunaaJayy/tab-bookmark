@@ -53,3 +53,10 @@ section {
         max-width: 250px;     
     }
 }
+
+
+.naar-bookmark article p:nth-of-type(2) {
+	border: 3px solid blue;
+	padding: 1rem;
+}
+
