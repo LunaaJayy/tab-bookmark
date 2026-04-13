@@ -74,3 +74,67 @@ Dit ging enigszins soepel, maar ik merk wel dat mijn andere manier van werken be
 Het is wel jammer dat heel veel werk die ik deze week heb gedaan niet heel nuttig is voor deze opdracht, ik ga namelijk geen extensie meer maken, en alle tijd kan ik goed gebruiken voor wat ik wél ga maken, wel is het over het algemeen wel waardevol om meer te weten over google extensies.
 
 Ik vind de opdracht over het algemeen wel erg interessant en ben benieuwd wat ik allemaal ga leren!
+
+### Dag 3 - Dinsdag 7 april
+**Wat heb ik gedaan**\
+Vandaag heb ik ervoor gezorgd dat ik kan testen met mijn website. Bij mij werkt het opslaan van de bookmark, en bij het herladen dat hij vanaf daar begint. Na het testen ben ik er helaas achter gekomen dat dit helemaal niet werkt..
+
+**Hoe lang heeft dit geduurd**\
+Het afmaken van mijn website heft 2,5 uur geduurd.
+
+**Wat heb ik geleerd**\
+Ik heb meer geleerd over ARIA, localStorage, en over het algemeen meer over accessibility, en JavaScript. 
+
+**Wat ga ik de volgende keer doen**\
+Volgende keer wil ik al mijn iteraties toepassen en kijken waarom mijn website niet heeft gewerkt voor Berend.
+
+### Iteraties
+***Is het makkelijk om het menu te vinden?***
+
+Ja
+
+***Is de popover accessible?***
+
+Het is duidelijk
+
+***Mis ik ergens feedback?***
+
+*Een geluidje als er een opgeslagen bookmark is?*
+
+Ja
+
+***Doet de .focus het bij NVDA? Bij VoiceOver doet hij het niet heel goed***
+
+Nou hij doet het niet op zijn computer, dus ff kijken hoe en wat arghh
+
+***Zijn de letters groot genoeg? Is het duidelijk?***
+
+De letters moeten groot en dik, vooral dik
+
+### Extra’s info
+
+- Echt met alles feedback geven!
+- Gebruik hele dikke borders waar kan
+- Lettertypes maken eigenlijk niet uit, geen cursief!!
+- Bij berend doen zijn staafjes het niet zo goed, dus de kegels werken vooral → licht en donkere kleuren mee werken qua contrast en kleuren.
+
+### Toevoegen!
+
+- Shortcut toevoegen om als checklist niet aan hebt geklikt alsnog naar de bookmark gaan.
+- Een geluidje (feedback) die klinkt als er een opgeslagen bookmark is.
+- HIJ DOET HET NIET
+- De checklist standaard uit hebben staan
+
+**De iteraties**
+Hoewel voor mijn laptop (Macbook) alles werkte, kwam ik erachter dat dat niet zo was op de lapto van Berend. Ik ga nu dus eerst proberen zonder localStorage verschillende functies te laten zien van mijn prototype. Zoals bijvoorbeeld dat er al een bookmark is opgeslagen en dat je gelijk ernaartoe gaat. En de functie om een bookmark op te slaan. Ik moet goed onthouden dat dit een prototype is, en geen werkende app hoeft te zijn.
+Ik wil ook de toggleknop nog steeds testen, maar daar moet ik even wat tekeningetjes voor maken om te kijken hoe dat werkt.
+Verder wil ik ook meer feedback geluiden toevoegen en de toggle knop standaard uitzetten (als het mij lukt die toe te voegen aan het prototype)
+
+## Reflectie week 2
+Ik was blij dat het mij deze week wel lukte om mijn prototype te itereren zodat ik kon testen (dacht ik). Het ging mij wat sneller af dan ik dacht en daar was ik erg blij om. Doordat de dinsdagen vaak zo rommelig verlopen, was ik bang dat ik niet veel gedaan zou kunnen krijgen. Gelukkig was dit dus niet het geval en hielp de verandering in locatie best wel voor mijn focus!
+
+... stuk over mijn schetsboekje ...
+
+De testen elke week helpen mij beter te begrijpen hoe belangrijk het is dat een website toegankelijk is. Ik heb zoveel respect voor mensen die door het web moeten navigeren met een screen reader, het is zo lastig en zoveel websites zijn er niet voor gemaakt. 
+
+Het voortgangsgesprek vind ik ook erg handig. Dankzij Leonie krijg ik meer inzichten in hoe ik dingen beter kan aanpakken. Nu ga ik bijv mijn prototype in verschillende functies opdelen, zodat ik alsnog kan laten zien wat mijn 'app' moet gaan doen. 
