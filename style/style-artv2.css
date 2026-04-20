@@ -1,0 +1,67 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+aside>a {
+    background: red;
+    color: white;
+    padding: .5rem;
+    border-radius: 6px;
+    border: solid black 4px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 2rem 2rem;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+aside button {
+    position: fixed;
+    right: 0;
+    top: 0;
+    margin: 2rem 2rem;
+    padding: .5rem;
+    border: .3rem solid black;
+    border-radius: .3rem;
+    background-color: aqua;
+    font-size: 1rem;
+
+    anchor-name: --button;
+}
+
+aside div {
+    width: 15rem;
+    height: auto;
+    margin: .5rem 0 0 0;
+    padding: .5rem;
+    position-area: span-left bottom;
+
+    p:nth-of-type(1) {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    article {
+        width: 80vw;
+    }
+}
+
+
+.feedback {
+    position: fixed;
+    left: -9999px;
+}
+
+.bookmarked {
+    border: 6px solid green;
+    padding: .5rem;
+}

@@ -75,6 +75,7 @@ Het is wel jammer dat heel veel werk die ik deze week heb gedaan niet heel nutti
 
 Ik vind de opdracht over het algemeen wel erg interessant en ben benieuwd wat ik allemaal ga leren!
 
+## Week 2
 ### Dag 3 - Dinsdag 7 april
 **Wat heb ik gedaan**\
 Vandaag heb ik ervoor gezorgd dat ik kan testen met mijn website. Bij mij werkt het opslaan van de bookmark, en bij het herladen dat hij vanaf daar begint. Na het testen ben ik er helaas achter gekomen dat dit helemaal niet werkt..
@@ -88,7 +89,7 @@ Ik heb meer geleerd over ARIA, localStorage, en over het algemeen meer over acce
 **Wat ga ik de volgende keer doen**\
 Volgende keer wil ik al mijn iteraties toepassen en kijken waarom mijn website niet heeft gewerkt voor Berend.
 
-### Iteraties
+### De test
 ***Is het makkelijk om het menu te vinden?***
 
 Ja
@@ -138,3 +139,72 @@ Ik was blij dat het mij deze week wel lukte om mijn prototype te itereren zodat 
 De testen elke week helpen mij beter te begrijpen hoe belangrijk het is dat een website toegankelijk is. Ik heb zoveel respect voor mensen die door het web moeten navigeren met een screen reader, het is zo lastig en zoveel websites zijn er niet voor gemaakt. 
 
 Het voortgangsgesprek vind ik ook erg handig. Dankzij Leonie krijg ik meer inzichten in hoe ik dingen beter kan aanpakken. Nu ga ik bijv mijn prototype in verschillende functies opdelen, zodat ik alsnog kan laten zien wat mijn 'app' moet gaan doen. 
+
+## Week 3
+### Dag 4 - Maandag 13 april
+**Wat heb ik gedaan**\
+Vandaag heb ik mijn idee opgesplitst in verschillende features, zodat ik ze allemaal apart kan testen. Ook zodat ik erachter kan komen wat er precies niet werkt aan mijn website op de laptop van Berend
+
+**Hoe lang heeft dit geduurd**\
+Dit duurde een halve dag
+
+**Wat heb ik geleerd**\
+Ik heb meer geleerd over screenreaders
+
+**Wat ga ik de volgende keer doen**\
+Volgende keer ga ik verder itereren aan de hand van de testen morgen.
+
+### De test
+***Werkt het??***
+Half
+
+***Welke van de twee menu opties is beter voor jou?***
+
+Het is handig van detail dat er beweging is,
+
+de H3 weglaten, omdat je h gebruikt om echt te navigeren, en dit is weinig 
+
+*Menu optie 1 lichte voordeel*
+
+***Verplaatst de focus ernaartoe?***
+
+Nee niet echt, tekst is niet ‘clickable’ dus de focus kan niet geselecteerd worden, het is geen ActiveElement dan.  
+
+***Wordt alles opgelezen?***
+
+
+### Extra info
+
+- Voor elke aparte feature dan een ander feedback geluidje
+- Veel mensen navigeren naar heading labels.
+- Even kijken of het mogelijk is dat als je met screenreader op de focus bent of dat ook werkt. (want dat is niet de focus van de website)
+- Als je een lijst hebt met de opgeslagen bookmarks, dan wel echt als zon dialogue doen, zodat je niet je positie in de pagina verliest → weet niet of dit mogelijk is aangezien het in dezelfde pagina zit.
+- Probeer de hele breedte van het scherm te gebruiken
+
+### Toevoegen
+
+- control+shift+t werkt niet
+
+**De iteraties**
+Ik wil uitzoeken wat mogelijke oplossingen zijn voor de problemen die ik heb ondervonden tijdens de tweede test. Ik moet een manier vinden om ervoor te zorgen dat de teksten ook focusable zijn, dat het interactief is.
+Daarnaast wil ik nog verder kijken hoe ik de hele breedte van het scherm kan gebruiken. Ook wil ik een een shortcut veranderen (aangezien control+shift+t niet werkt).
+Als laatste ga ik de h3 weghalen in het menu, omdat het geen nut heeft voor het navigeren. Daarbij staat er ook weinig tekst in het menu dus is het niet nodig.
+
+## Reflectie week 3
+Het is een opluchting dat ik nu weet waarom mijn prototype niet helemaal werkt. Verder vind ik het ook erg interessant om te beseffen dat zo'n klein product dat ik wil maken: het opslaan van 'bookmarks' en daar vervolgens weer naartoe kunnen navigeren, zoveel iteraties heeft en dat het helemaal niet makkelijk is. 
+Afgelopen week heb ik niet heel veel kunnen doen aan mijn prototype, maar wel ben ik blij dat ik alsnog bij de test kon zijn ondanks dat ik naar de Smashing Conference ging. Ik wilde er namelijk per se bij zijn omdat mijn prototype het niet goed deed op zijn laptop, dus wilde ik zien of hij het deze keer wel deed. Gelukkig deed hij het meer dan ik dacht!
+
+## Week 4
+### Dag 5 - Maandag 20 april
+**Wat heb ik gedaan**\
+
+
+**Hoe lang heeft dit geduurd**\
+
+**Wat heb ik geleerd**\
+
+
+**Wat ga ik de volgende keer doen**\
+
+
+TABINDEX 0 werkt niet met screenreader, dan geeft hij alleen met tab de focus weer, niet waar de screenreader is

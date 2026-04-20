@@ -4,28 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style-article.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/style-artv2.css">
+    <title>Artikel v2</title>
 </head>
 
 <body>
     <header>
-        <h1>NU.nl</h1>
-        <a href="index.html">Ga terug naar overzicht pagina</a>
+        <h1>NIEUWS</h1>
     </header>
     <aside>
-        <button popovertarget="bookmark">Open bookmark menu</button>
-        <div id="bookmark" popover="manual">
-            <h2>Welkom bij de Focus Bookmark</h2>
-            <p>Druk op Control + Shift + 'Y' om je bookmark daar op te slaan</p>
-            <label>
+        <a href="index.html">Ga terug naar overzicht pagina</a>
+        <button popovertarget="menu-bookmark">Open bookmark menu</button>
+            <div id="menu-bookmark" popover="manual">
+                <p>Welkom bij de Focus Bookmark</p>
+                <p>Druk op Control + Shift + 'Y' om je bookmark daar op te slaan</p>
+                <!-- <label>
                 <input type="checkbox" id="bookmark-toggle" checked>
                 Spring naar bookmark bij laden
-            </label>
-        </div>
+            </label> -->
+            </div>
     </aside>
     <!-- https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-atomic -->
-    <p class="feedback" aria-live="assertive" aria-atomic="true"></p>
+    <p tabindex="-1" class="feedback" aria-live="assertive" aria-atomic="true"></p>
     <main>
         <article>
             <h2>Media gefopt door nepaccount: oudste schildpad ter wereld leeft nog</h2>
@@ -86,7 +86,7 @@
     <footer>
 
     </footer>
-    <script src="scripts/script-article.js"></script>
+    <script src="scripts/script-artv2.js"></script>
 </body>
 
 </html>
