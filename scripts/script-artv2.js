@@ -64,8 +64,8 @@ document.addEventListener("keydown", (e) => {
 
 // naar bookmark
 document.addEventListener("keydown", (e) => {
-	const isMac = e.metaKey && e.shiftKey && e.key.toLowerCase() === "p";
-	const isWindows = e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "p";
+	const isMac = e.metaKey && e.shiftKey && e.key.toLowerCase() === "s";
+	const isWindows = e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "s";
 
 	if ((isMac || isWindows) && getBookmark()) {
 		e.preventDefault();
