@@ -195,16 +195,19 @@ Het is een opluchting dat ik nu weet waarom mijn prototype niet helemaal werkt. 
 Afgelopen week heb ik niet heel veel kunnen doen aan mijn prototype, maar wel ben ik blij dat ik alsnog bij de test kon zijn ondanks dat ik naar de Smashing Conference ging. Ik wilde er namelijk per se bij zijn omdat mijn prototype het niet goed deed op zijn laptop, dus wilde ik zien of hij het deze keer wel deed. Gelukkig deed hij het meer dan ik dacht!
 
 ## Week 4
-### Dag 5 - Maandag 20 april
+### Dag 5 - Maandag 20 april, met Mila
 **Wat heb ik gedaan**\
-
+Vandaag heb ik een heel artikel toegevoegd om alle features te combineren. Ook heb ik ervoor gezorgd dat alles werkt, (hopelijk ook voor Berend)
 
 **Hoe lang heeft dit geduurd**\
+Dit heeft de hele dag geduurd
 
 **Wat heb ik geleerd**\
-
+Ik heb meer geleerd over tabindex en hoe dat werkt. Ook over .focus()
 
 **Wat ga ik de volgende keer doen**\
+Ik wil kijken of het lukt om nog een extra feature toe te voegen, zoals bijvoorbeeld localStorage met een toggle knop.
+
 
 
 TABINDEX 0 werkt niet met screenreader, dan geeft hij alleen met tab de focus weer, niet waar de screenreader is
