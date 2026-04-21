@@ -30,8 +30,16 @@ main.querySelectorAll('p, h1, h2, h3').forEach(el => {
 document.addEventListener("keydown", (e) => {
 	console.log(e.key, e.metaKey, e.shiftKey);
 
-	const isMac = e.metaKey && e.shiftKey && e.key === "y";
-	const isWindows = e.ctrlKey && e.shiftKey && e.key === "y";
+	const isMac = e.metaKey && e.shiftKey && e.key.toLowerCase() === "y";
+	const isWindows = e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "y";
+
+	if (isMac) {
+		console.log('MAC')
+	}
+
+	if (isWindows) {
+		console.log('WINDOWS')
+	}
     
 
 	if (isMac || isWindows) {
@@ -56,8 +64,8 @@ document.addEventListener("keydown", (e) => {
 
 // naar bookmark
 document.addEventListener("keydown", (e) => {
-	const isMac = e.metaKey && e.shiftKey && e.key === "p";
-	const isWindows = e.ctrlKey && e.shiftKey && e.key === "p";
+	const isMac = e.metaKey && e.shiftKey && e.key.toLowerCase() === "p";
+	const isWindows = e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "p";
 
 	if ((isMac || isWindows) && getBookmark()) {
 		e.preventDefault();
