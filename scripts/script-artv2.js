@@ -14,7 +14,10 @@ checkbox.addEventListener("change", () => {
 window.addEventListener("load", () => {
 	const localSaved = localStorage.getItem("opgeslagen");
 	const saved = document.querySelector(localSaved);
+
+	if(saved){
 	saved.classList.add("bookmarked");
+	}
 
 	const checkboxValue = localStorage.getItem("checkbox");
 	if (checkboxValue !== null) {
@@ -27,7 +30,7 @@ window.addEventListener("load", () => {
 	}
 });
 
-// bookmark menu gaat wek zodra de gebruiker er met zn focus vanaf is
+// bookmark menu gaat weg zodra de gebruiker er met zn focus vanaf is
 popover.addEventListener("focusout", () => {
 	popover.hidePopover();
 });

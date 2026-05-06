@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NS – Nederlandse Spoorwegen</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="style/style-ns.css">
+</head>
+<body>
+
+    <!-- GEMAAKT MET CLAUDE: https://claude.ai/share/aa14fa89-506a-468f-8414-3a324835aa58 -->
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-badge">NS</div>
+      <span style="font-size:15px; font-weight:700; color:white;">Nederlandse Spoorwegen</span>
+    </div>
+    <div class="header-links">
+      <a href="#">Mijn NS</a>
+      <a href="#">Zakelijk</a>
+      <a href="#">Klantenservice</a>
+    </div>
+</header>
+
+  <!-- Navigatie -->
+  <nav class="nav">
+    <a href="#" class="active">Reisplanner</a>
+    <a href="#">Kaartjes &amp; Abos</a>
+    <a href="#">Storingen</a>
+    <a href="#">Informatie</a>
+    <a href="#">NS International</a>
+  </nav>
+
+  <aside>
+        <a href="index.html">Ga terug naar overzicht pagina</a>
+        <button popovertarget="menu-bookmark">Open bookmark menu</button>
+        <div id="menu-bookmark" popover="manual">
+            <p>Welkom bij de Focus Bookmark</p>
+            <p>Druk op Control + Shift + 'Y' om je bookmark daar op te slaan</p>
+            <p>Druk op Control + Shift + 'S' om naar je bookmark te gaan</p>
+            <label>
+                <input type="checkbox" id="bookmark-toggle" checked>
+                Spring naar bookmark bij laden
+            </label>
+        </div>
+    </aside>
+
+    <p tabindex="-1" class="feedback" aria-live="assertive" aria-atomic="true"></p>
+
+<main>
+  <!-- Reisplanner -->
+  <div class="planner">
+    <h2>Waar wil je heen?</h2>
+    <div class="planner-row">
+      <div class="field">
+        <label>Van</label>
+        <input type="text" id="from" placeholder="Vertrekstation" />
+      </div>
+      <div style="padding-bottom:10px; font-size:18px; color:var(--ns-dark); cursor:pointer;"
+           title="Omwisselen"
+           onclick="var a=document.getElementById('from').value,b=document.getElementById('to').value;document.getElementById('from').value=b;document.getElementById('to').value=a;">
+        ⇌
+      </div>
+      <div class="field">
+        <label>Naar</label>
+        <input type="text" id="to" placeholder="Aankomststation" />
+      </div>
+      <div class="field" style="max-width:130px;">
+        <label>Datum</label>
+        <input type="date" id="date" />
+      </div>
+      <div class="field" style="max-width:110px;">
+        <label>Tijd</label>
+        <input type="time" id="time" value="09:00" />
+      </div>
+      <div class="field" style="max-width:150px;">
+        <label>Vertrek / Aankomst</label>
+        <select>
+          <option>Vertrek</option>
+          <option>Aankomst</option>
+        </select>
+      </div>
+      <button class="btn-search">
+        <i class="ti ti-search"></i> Plannen
+      </button>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <button class="active">Actueel</button>
+    <button>Abonnementen</button>
+    <button>OV-chipkaart</button>
+    <button>NS International</button>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+
+    <!-- Storingen -->
+    <div class="disruptions">
+      <div class="disruptions-header">
+        <i class="ti ti-alert-triangle"></i>
+        <strong>Actuele storingen &amp; werkzaamheden</strong>
+      </div>
+      <div class="disruption-item">
+        <span>Utrecht Centraal – Amsterdam Centraal: vertraging</span>
+        <span class="badge">Storing</span>
+      </div>
+      <div class="disruption-item">
+        <span>Den Haag HS – Delft: werkzaamheden dit weekend</span>
+        <span class="badge minor">Gepland</span>
+      </div>
+      <div class="disruption-item">
+        <span>Eindhoven – Venlo: gewijzigde dienstregeling</span>
+        <span class="badge minor">Gepland</span>
+      </div>
+    </div>
+
+    <!-- OV-chipkaart banner -->
+    <div class="ov-pay">
+      <div class="ov-icon"><i class="ti ti-credit-card"></i></div>
+      <div class="ov-text">
+        <h4>Betaal met OV-chipkaart of NS-app</h4>
+        <p>Laad je saldo op of koop een abonnement via de NS-app. Altijd voordelig reizen.</p>
+      </div>
+      <button class="btn-search" style="font-size:12px; padding:8px 14px;">Meer info</button>
+    </div>
+
+    <!-- Kaarten -->
+    <div class="section-title">
+      Handige diensten
+      <a href="#">Alle diensten →</a>
+    </div>
+
+    <div class="grid2">
+      <div class="card">
+        <div class="card-img">
+          <i class="ti ti-ticket"></i>
+        </div>
+        <div class="card-body">
+          <h3>Kaartjes kopen</h3>
+          <p>Koop eenvoudig een enkeltje of retour, dagkaart of groepsticket.</p>
+          <a class="card-link" href="#">Direct kopen →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img blue2">
+          <i class="ti ti-calendar-repeat"></i>
+        </div>
+        <div class="card-body">
+          <h3>Abonnementen</h3>
+          <p>Reis voordelig met een NS-abonnement. Kies wat bij jou past.</p>
+          <a class="card-link" href="#">Bekijk abonnementen →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img blue3">
+          <i class="ti ti-bike"></i>
+        </div>
+        <div class="card-body">
+          <h3>OV-fiets</h3>
+          <p>Huur een fiets bij meer dan 300 stations. Ideaal voor de laatste kilometer.</p>
+          <a class="card-link" href="#">OV-fiets info →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-img blue4">
+          <i class="ti ti-world"></i>
+        </div>
+        <div class="card-body">
+          <h3>NS International</h3>
+          <p>Reis naar Brussel, Parijs, Londen of verder met de internationale trein.</p>
+          <a class="card-link" href="#">Internationaal reizen →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <h5>Reizen</h5>
+        <a href="#">Reisplanner</a>
+        <a href="#">Dienstregeling</a>
+        <a href="#">Storingen</a>
+        <a href="#">Stations</a>
+      </div>
+      <div>
+        <h5>Kaartjes</h5>
+        <a href="#">Enkeltje &amp; retour</a>
+        <a href="#">Abonnementen</a>
+        <a href="#">NS Flex</a>
+        <a href="#">Korting</a>
+      </div>
+      <div>
+        <h5>Service</h5>
+        <a href="#">Klantenservice</a>
+        <a href="#">NS-app</a>
+        <a href="#">OV-chipkaart</a>
+        <a href="#">Gevonden voorwerpen</a>
+      </div>
+      <div>
+        <h5>NS</h5>
+        <a href="#">Over NS</a>
+        <a href="#">Duurzaamheid</a>
+        <a href="#">Vacatures</a>
+        <a href="#">Pers</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NS — Nederlandse Spoorwegen</span>
+      <div class="social">
+        <i class="ti ti-brand-facebook"></i>
+        <i class="ti ti-brand-x"></i>
+        <i class="ti ti-brand-instagram"></i>
+        <i class="ti ti-brand-linkedin"></i>
+      </div>
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Cookies</a>
+        <a href="#">Toegankelijkheid</a>
+      </div>
+    </div>
+</footer>
+
+  <script src="scripts/script-artv2.js">
+    // Zet datum op vandaag
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').value = today;
+
+    // Tab-wisseling
+    document.querySelectorAll('.tabs button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
