@@ -145,8 +145,6 @@ Verder wil ik ook meer feedback geluiden toevoegen en de toggle knop standaard u
 
 Ik was blij dat het mij deze week wel lukte om mijn prototype te itereren zodat ik kon testen (dacht ik). Het ging mij wat sneller af dan ik dacht en daar was ik erg blij om. Doordat de dinsdagen vaak zo rommelig verlopen, was ik bang dat ik niet veel gedaan zou kunnen krijgen. Gelukkig was dit dus niet het geval en hielp de verandering in locatie best wel voor mijn focus!
 
-... stuk over mijn schetsboekje ...
-
 De testen elke week helpen mij beter te begrijpen hoe belangrijk het is dat een website toegankelijk is. Ik heb zoveel respect voor mensen die door het web moeten navigeren met een screen reader, het is zo lastig en zoveel websites zijn er niet voor gemaakt.
 
 Het voortgangsgesprek vind ik ook erg handig. Dankzij Leonie krijg ik meer inzichten in hoe ik dingen beter kan aanpakken. Nu ga ik bijv mijn prototype in verschillende functies opdelen, zodat ik alsnog kan laten zien wat mijn 'app' moet gaan doen.
@@ -224,5 +222,80 @@ Ik heb meer geleerd over tabindex en hoe dat werkt. Ook over .focus()
 **Wat ga ik de volgende keer doen**\
 Ik wil kijken of het lukt om nog een extra feature toe te voegen, zoals bijvoorbeeld localStorage met een toggle knop.
 
-localstorage:
-ik wil met localstorage ervoor zorgen dat
+### Vierde test
+
+***Werkt de aria: assertive wel bij NVDA?***
+
+Het werkt helaas niet, als hij de shortcuts intypt. 
+
+→ Ik heb het tijdens de test gefixt (gelukkig was ik de tweede), er moest `.toLowerCase()` aan toegevoegd worden.
+
+***Werken de knoppen in die kleur? Links en rechts? Is het duidelijker zo?***
+
+Ja, maar hij ziet geen kleur op zijn scherm!
+
+***Fijn dat de tekst zo breed is?***
+
+Ja dat is fijn!
+
+### Extra
+
+- Als je weggaat uit bookmark menu, dan moet die ook weg. Zodat de hele tekst gewoon leesbaar is
+- De website moet geen eigen software maken, maar goed werken met de software die berend zelf heeft → zoals als hij zelf inzoomt dat de website alsnog er goed uit ziet.
+- Misschien nog verder: meerdere bookmarks kunnen opslaan en er ook kunnen bij noteren (ik denk nu te weinig tijd?)
+
+**De iteraties**
+De laatste aanpassingen die ik wil doen op basis van mijn testen met Berend zijn, ten eerste, ervoor zorgen dat, zodra je weggaat uit het bookmarkmenu, deze ook weer inklapt, zodat er geen tekst wegvalt zodra Berend niet meer gefocust is op het menu. 
+Daarnaast wil ik weer proberen localstorage te gebruiken, zodat ik de échte functie van de website kan laten zien, hierbij wil ik ook weer een toggle knop toevoegen zodat er gekozen kan worden of de gebruiker direct naar diens bookmark wil of pas bij het drukken op de command.
+Verder wil ik de landingspagina nog een beetje aanpassen, zodat het ook past bij Berend, de linkjes wil ik wat groter maken en ik wil er een border omheen doen.
+Verder, als ik nog tijd heb, wil ik nog een andere website maken om te laten zien hoe mijn feature werkt.
+
+## Reflectie week 4
+Ik ben dolbij dat mijn website eindelijk werkt voor Berend en dat ik gelukkig overige dingen kon testen met hem. Nu heb ik gelukkig een goed, duidelijk beeld wat er nog gedaan moet worden voor de deadline. De iteraties die ik van plan ben te doen zijn niet super groot, het zijn allemaal kleine dingetjes die hopelijk snel gaan, zodat ik mij nog kan focussen op een andere pagina maken om de werking van mijn feature te laten zien. 
+Ergens vind ik het daarnaast ook jammer dat Berend het eindproduct niet kan zien, hij was erg enthousiast en wilde ons graag helpen, dat vond ik erg fijn! Dit was vooral handig voor ***study situation*** van de Exclusive Design Principles.
+
+## Week 5
+### Dag 7 - Zondag 3 mei
+
+**Wat heb ik gedaan**\
+Ik heb localstorage toegevoegd aan mijn feature en ook de toggle knop om ervoor te kiezen of je er gelijk naartoe wilt (de bookmark) bij het laden van de pagina of pas als je de shortcut intypt. Verder heb ik ervoor gezorgd dat 
+
+**Hoe lang heeft dit geduurd**\
+Dit duurde 2 uur
+
+**Wat heb ik geleerd**\
+Ik heb meer geleerd over localstorage
+
+**Wat ga ik de volgende keer doen**\
+Ik wil een extra pagina maken om de feature te laten zien.
+
+### Dag 8 - Maandag 4 mei
+**Wat heb ik gedaan**\
+Ik heb de extra pagina aangemaakt om de feature te laten zien
+
+**Hoe lang heeft dit geduurd**\
+Dit duurde 1 uur
+
+**Wat heb ik geleerd**\
+Niets
+
+**Wat ga ik de volgende keer doen**\
+Inleveren!
+
+## Reflectie week 5
+De website is af en ik ben erg trots op mijn resultaat. Ik vond het leuk om te testen met Berend. De testen elke week waren de perfecte kansen om ***study situation*** toe te passen van de Exclusive Design Principles. Zo kwam ik erachter dat Berend bijvoorbeeld NVDA gebruikt, heel veel keyboard shortcuts zelf heeft aangemaakt, en dat hij heel veel contrast nodig heeft (zijn computer staat er ook op ingesteld). 
+***Ignore conventions*** is bij deze website vooral terug te zien in bijvoorbeeld het feit dat ik alle tekstblokken een tabindex heb gegeven, zodat ze focusbaar zijn (en dus .focus() werkt voor het oplezen van de screenreader). Daarnaast heb ik bijvoorbeeld een toggle knop bedacht (om meteen naar de bookmark te gaan of niet), dat zie je in 'normale' websites ook niet snel terug. 
+Het feit dat ik dikke borders heb gebruikt en de contrasten heb verhoogd is een voorbeeld van ***prioritise identity***. Ik heb ervoor gekozen niet een heel mooie website te maken maar eentje die goed voor Berend werkt. Het was lastig om ***prioritise identity*** toe te passen omdat Berend voor heel veel slechtzienden nadacht, en niet alleen voor zichzelf (omdat hij ook de ervaring van een algemeen slechtziend persoon wil meegeven aan ons).
+Als laatste is de Principle ***add nonsense*** aan de beurt. Ik heb hier wel over nagedacht, zoals bijvoorbeeld een geluidje (in plaats van dat het wordt opgelezen) zodra een bookmark is opgeslagen. Echter heb ik hier niet voor gekozen aangezien het oplezen het sowieso niet helemaal lekker deed (desondanks ik de <p> op ***assertive*** had gezet). 
+
+Ik heb veel geleerd tijdens het maken van deze website. Zo heb ik bijvoorbeeld ontwikkelingen gemaakt met mijn leerdoel over efficiënter beginnen met ontwerpen. Ik was namelijk eerst begonnen met het maken van een Google Extension, maar dat was erg lastig. Vervolgens bleek een prototype ook gewoon oké te zijn, dus veranderde ik met mijn idee daarnaartoe. Ook ben ik heel 'tegenslagen' tegengekomen doordat mijn prototype het telkens niet deed bij Berend. Gelukkug kon ik elke keer met een oplossing voor de problemen komen waardoor hij wel werkte. 
+
+Ook al was het niet mijn initiële idee, als ik meer tijd had gehad, had ik graag nog een bibliotheek willen maken voor alle bookmarks. Het idee van mijn website is nu dat je dus één bookmark hebt en daar ook naartoe kan gaan als je de pagina herlaadt, met meerdere bookmarks is dit wat lastiger maar wel interessant om verder uit te zoeken. 
+
+## Bronnen
+- Geeks for Geeks - selector generator: https://www.geeksforgeeks.org/css/how-to-create-a-function-generateselector-to-generate-css-selector-path-of-a-dom-element/
+- Mozilla - activeElement: https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement
+- Mozilla - Aria Atomic: https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Reference/Attributes/aria-atomic
+- Mozilla - load event: https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+- Mozilla - localStorage: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
