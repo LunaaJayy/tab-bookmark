@@ -1,7 +1,19 @@
 nav {
+    font-family:Arial, Helvetica, sans-serif;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 3rem;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a{
+        border: solid 4px black;
+        padding: 2rem;
+    }
 }
